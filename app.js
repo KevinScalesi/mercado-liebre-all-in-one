@@ -11,7 +11,7 @@ app.get("/", function(req,res){
 })
 
 
-
+/*
 app.get("*", function(req,res){
     if(req.url.endsWith(".css")){
         let file = path.resolve("public/styles" + req.url)
@@ -26,4 +26,14 @@ app.get("*", function(req,res){
         return res.sendFile(file)
     }
     return res.send("Not Found")
+})
+*/
+
+app.get("*", function(req,res){
+    if(req.url.includes(".")){
+        let file = path.resolve("public" + req.url)
+        return res.sendFile(file)
+    }
+
+    res.send("Not Found")
 })
