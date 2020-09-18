@@ -1,0 +1,67 @@
+:root {
+    --header-bg-color: #EAC926;
+    --article-bg-color: white;
+    --section-bg-color:  #ebebeb;
+    --links-color: #03264C;
+    --icono-pie-pagina-color: #1259c3;
+    --titulo-seccion-color: #666;
+    --oferta-color: #39b54a;
+
+}
+
+header{
+    background-color: var(--header-bg-color);
+}
+
+.section{
+    background-color: var(--section-bg-color);
+}
+
+.article{
+    background-color: var(--article-bg-color);
+}
+
+h3{
+    font-size: 24px;
+    color: var(--titulo-seccion-color);
+}
+
+h4{
+    font-size: 16px;
+    color: var(--titulo-seccion-color);
+}
+
+h5{
+    font-size: 16px;
+    color: var(--titulo-seccion-color);
+}
+
+.oferta{
+    font-size: 16px;
+    color: var(--oferta-color);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-size: 12px;
+}
+.precios{
+    font-size: 18px;
+}
+
+.icono{
+    color: var(--icono-pie-pagina-color);
+}
+
+a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black
+}
+
+ul {
+    list-style-type: none;
+}
