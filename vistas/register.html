@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Creando Estructura</title>
+        <link rel="stylesheet" href="/styles/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+     </head>
+    <body>
+        <header>
+            <img src="/images/logo-mercado-liebre.svg" alt="logo de mercado liebre">
+            
+            <p>Lugar para la barra de busqueda</br></p>
+            
+            <p><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de crédito</p>
+            
+            <nav>
+                <ul>
+                    <li><a href="/">Oferta</a></li>
+                    <li><a href="/">Tiendas Oficiales</a></li>
+                    <li><a href="/">Vender</a></li>
+                    <li><a href="/">Agenda</a></li>
+                    </br>
+                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a href="/log-in">Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
+                    <li><a href="/">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+                <form action="/" method="POST">
+                     
+                    <div>
+                        <p class="campos"><input type="text" placeholder="Nombre y Apellido" name="name" id="name"></p>
+                        <p class="campos"><input type="text" placeholder="Nombre de usuario" name="user" id="user"></p>
+                        <p class="campos"><input type="email" placeholder="Email" name="email" id="email"></p>
+                        <p class="campos"><label for="bornDate">Fecha de nacimiento</label></p>
+                        <p class="campos"><input type="date" name="born-date" id="bornDate"></p>
+                        <p class="campos"><input type="text" placeholder="Domicilio" name="domicilio" id="domicilio"></p> 
+                    </div>   
+                    
+                    <div>
+                        <label class="lable-register" for="tipoPerfil">Perfil de usuario</label>                
+                        <p class="campos"><input type="radio" name="tipoPerfil" id="comprador" value="C" checked>Comprador</p>
+                        <p class="campos"><input type="radio" name="tipoPerfil" id="vendedor" value="V">Vendedor</p>
+                    </div>
+
+                    <div>
+                        <label class="lable-register" for="intereses">Interes</label>                
+                        <p class="campos" >
+                            <input type="checkbox" name="intereses" id="electro" value="1" >Electro
+                            <input type="checkbox" name="intereses" id="moda" value="2">Moda
+                            <input type="checkbox" name="intereses" id="hogar" value="3">Hogar
+                            <input type="checkbox" name="intereses" id="jugeteria" value="4">Jugeteria
+                            <input type="checkbox" name="intereses" id="vidaSana" value="5">Vida sana
+                        </p>
+                    </div>
+                    
+                    
+                    <div>
+                        <label class="lable-register" for="">Elige tu foto de usuario</label>
+                        <p class="campos"><input id="subir-imagen" type="file" name="imagenPerfil" accept=".jpg"></p>
+                     </div>
+
+                    <div>
+                        <p class="campos"><input type="password" placeholder="Elegí tu contraseña" name="password" id="password"></p>
+                        <p class="campos"><input type="password" placeholder="Confirma tu contraseña" name="password" id="confirmPass"></p>
+                    </div>
+
+                    <div>
+                        <p class="campos">
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Borrar</button>
+                        </p>
+                    </div>
+                </form>
+        </section>
+
+        <section>
+            <i class="fas fa-credit-card icono"></i>
+            <h4>Pagá con tarjeta o en efectivo</h4>
+            <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de
+                pago. ¡Y siempre es seguro!</p>
+
+            <i class="fas fa-gift icono"></i>
+            <h4>Envío gratis desde los $ 2.500</h4>
+            <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de
+                productos. Es un beneficio de MercadoPuntos.</p>
+            
+            <i class="fas fa-user-shield icono"></i>
+            <h4>Seguridad, de principio a fin</h4>
+            <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer
+                porque estás siempre prtegid@.</p>
+            <p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
+        </section>
+
+        
+    </body>
+</html>

@@ -29,6 +29,7 @@ h3{
 h4{
     font-size: 16px;
     color: var(--titulo-seccion-color);
+    margin: 5px 0 5px 0;
 }
 
 h5{
@@ -42,12 +43,15 @@ h5{
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 p{
     font-size: 12px;
 }
+
 .precios{
     font-size: 18px;
 }
@@ -64,4 +68,23 @@ a{
 
 ul {
     list-style-type: none;
+}
+
+div {
+    margin: 20px 0 20px 0;
+    font-size: 16px;
+    
+}
+
+.campos{
+    margin: 2px 0 2px 0;
+    color: black;
+}
+
+#subir-imagen{
+    width: 350px;
+}
+
+.lable-register{
+    font-weight: bold;
 }

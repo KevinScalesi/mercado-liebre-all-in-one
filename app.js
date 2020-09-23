@@ -10,7 +10,20 @@ app.get("/", function(req,res){
     res.sendFile(file)
 })
 
+app.post("/", function(req,res){
+    let file = path.resolve("vistas/index.html")
+    res.sendFile(file)
+})
 
+app.get("/register", function(req,res){
+    let file = path.resolve("vistas/register.html")
+    res.sendFile(file)
+})
+
+app.get("/log-in", function(req,res){
+    let file = path.resolve("vistas/log-in.html")
+    res.sendFile(file)
+})
 /*
 app.get("*", function(req,res){
     if(req.url.endsWith(".css")){
