@@ -9,6 +9,9 @@
 
 }
 
+figure {
+    margin: 0;
+}
 header{
     background-color: var(--header-bg-color);
 }
