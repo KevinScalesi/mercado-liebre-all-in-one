@@ -10,30 +10,35 @@
      </head>
     <body>
         <header>
-            <figure>
+            <figure id="logo">
                 <img src="/images/logo-mercado-liebre.svg" alt="logo de mercado liebre">
             </figure>
-            <p>Lugar para la barra de busqueda</br></p>
+            <div><input type="search" placeholder="Ingrese artículo" name="searchBar" id="searchBar"></div>
             
             <p><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de crédito</p>
             
-            <nav>
-                <ul>
-                    <li><a href="/">Oferta</a></li>
-                    <li><a href="/">Tiendas Oficiales</a></li>
-                    <li><a href="/">Vender</a></li>
-                    <li><a href="/">Agenda</a></li>
-                    </br>
-                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="/log-in">Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
-                    <li><a href="/">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
-                </ul>
+            <nav id="navegacion">
+                <button class="menu-links" type="button">
+                    <i class="fas fa-bars"></i>
+
+                    <ul>
+                        <li><a href="/">Oferta</a></li>
+                        <li><a href="/">Tiendas Oficiales</a></li>
+                        <li><a href="/">Vender</a></li>
+                        <li><a href="/">Agenda</a></li>
+                        </br>
+                        <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                        <li><a href="/log-in">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                        <li><a href="/">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                    </ul>
+                </button>
+                
             </nav>
         </header>
         
         <section>
             <figure>
-                <img src="/images/img-home-banner.jpg" alt="imagen banner" width="100%">
+                <img src="/images/img-home-banner.jpg" alt="imagen banner" >
             </figure>
         </section>
         <main>
@@ -41,7 +46,7 @@
                 <h3>Basado en tu ultima busqueda</h3>
                 <article class="article">
                     <figure>
-                        <img src="/images/img-cafetera-moulinex.jpg" alt="imagen cafetera" width="100%">
+                        <img src="/images/img-cafetera-moulinex.jpg" alt="imagen cafetera">
                     </figure>
                     <i class="fas fa-truck oferta"></i>
                     <p class="precios">$6.770</p>
@@ -51,7 +56,7 @@
                 
                 <article class="article">
                     <figure>
-                        <img src="/images/img-macbook-pro-2019.jpg" alt="imagen macbook" width="100%">
+                        <img src="/images/img-macbook-pro-2019.jpg" alt="imagen macbook">
                     </figure>
                     <i class="fas fa-truck oferta"></i>
                     <p class="precios">$230.000</p>
@@ -61,7 +66,7 @@
         
                 <article class="article">
                     <figure>
-                        <img src="/images/img-samsung-galaxy-s10.jpg" alt="imagen smartphone samsung" width="100%">
+                        <img src="/images/img-samsung-galaxy-s10.jpg" alt="imagen smartphone samsung">
                     </figure>
                     <i class="fas fa-truck oferta"></i>
                     <p class="precios">$70.500</p>
@@ -71,7 +76,7 @@
 
                 <article class="article">
                     <figure>
-                        <img src="/images/img-tv-samsung-smart.jpg" alt="imagen smartTv" width="100%">
+                        <img src="/images/img-tv-samsung-smart.jpg" alt="imagen smartTv" >
                     </figure>
                     <i class="fas fa-truck oferta"></i>
                     <p class="precios">$34.000</p>
@@ -85,7 +90,7 @@
                 <h3>Ofertas</h3>
                 <article class="article">
                     <figure>
-                        <img src="/images/img-cafetera-moulinex.jpg" alt="imagen cafetera" width="100%">
+                        <img src="/images/img-cafetera-moulinex.jpg" alt="imagen cafetera" >
                     </figure>
                     <i class="fas fa-truck oferta"></i>
                     <p class="precios">$6.770</p>
@@ -95,7 +100,7 @@
                 
                 <article class="article">
                     <figure>
-                        <img src="/images/img-macbook-pro-2019.jpg" alt="imagen macbook" width="100%">                    </figure>
+                        <img src="/images/img-macbook-pro-2019.jpg" alt="imagen macbook" >                    </figure>
                     <i class="fas fa-truck oferta"></i>
                     <p class="precios">$230.000</p>
                     <p class="oferta">20% OFF</p> 
@@ -104,7 +109,7 @@
         
                 <article class="article">
                     <figure>
-                        <img src="/images/img-samsung-galaxy-s10.jpg" alt="imagen smartphone samsung" width="100%">
+                        <img src="/images/img-samsung-galaxy-s10.jpg" alt="imagen smartphone samsung" >
                     </figure>
                     <i class="fas fa-truck oferta"></i>
                     <p class="precios">$70.500</p>
@@ -114,7 +119,7 @@
 
                 <article class="article">
                     <figure>
-                        <img src="/images/img-tv-samsung-smart.jpg" alt="imagen smartTv" width="100%">
+                        <img src="/images/img-tv-samsung-smart.jpg" alt="imagen smartTv" >
                     </figure>
                     <i class="fas fa-truck oferta"></i>
                     <p class="precios">$34.000</p>

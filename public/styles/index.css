@@ -4,35 +4,77 @@
     --section-bg-color:  #ebebeb;
     --links-color: #03264C;
     --icono-pie-pagina-color: #1259c3;
+    --icono-menu: #0044AA;
+    --icono-menu-hover: #0022AA;
     --titulo-seccion-color: #666;
     --oferta-color: #39b54a;
-
 }
 
-figure {
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+#logo{
     margin: 0;
+    padding: 0;
+    width: 50%;
 }
+
+#searchBar {
+    width: 50%;
+}
+
 header{
     background-color: var(--header-bg-color);
+    
+}
+
+footer{
+    background-color: var(--article-bg-color);
+    margin: 20px 0px 20px 0px;
+    padding: 5%;
+}
+
+footer article{
+    margin: 20px 0px 20px 0px;
 }
 
 .section{
     background-color: var(--section-bg-color);
+    font-size: 90%;
 }
 
 .article{
     background-color: var(--article-bg-color);
+    margin: 20px 0px 20px 0px;
+    border-left: 15px solid;
+    border-right: 15px solid;
+    border-color: var(--section-bg-color);
+    padding: 15px;
+}
+
+
+img{
+    width: 100%;
+}
+
+h1{
+
 }
 
 h3{
-    font-size: 24px;
     color: var(--titulo-seccion-color);
+    margin: 20px 0px 20px 0;
+    text-align: center;
 }
 
 h4{
     font-size: 16px;
     color: var(--titulo-seccion-color);
-    margin: 5px 0 5px 0;
+
 }
 
 h5{
@@ -43,12 +85,12 @@ h5{
 .oferta{
     font-size: 16px;
     color: var(--oferta-color);
+
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: var(--section-bg-color);
 }
 
 p{
@@ -57,37 +99,70 @@ p{
 
 .precios{
     font-size: 18px;
+
 }
 
 .icono{
     color: var(--icono-pie-pagina-color);
+
 }
 
-a{
-    font-size: 16px;
+ul a{
+    font-size: 20px;
     text-decoration: none;
-    color: black
+    color: white;
+
 }
 
 ul {
     list-style-type: none;
+    display:none;
 }
 
 div {
     margin: 20px 0 20px 0;
     font-size: 16px;
-    
+
 }
 
 .campos{
     margin: 2px 0 2px 0;
     color: black;
+
 }
 
 #subir-imagen{
     width: 350px;
+
 }
 
 .lable-register{
     font-weight: bold;
+
+}
+
+#navegacion{
+    text-align: center;
+}
+
+.menu-links{
+    padding: 10px;
+    margin: 20px 0 20px 0;
+    border-radius: 5px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: var(--icono-menu);
+    color: white;
+}
+
+.menu-links:hover{
+    width: auto;
+    height: auto;
+    background-color: var(--icono-menu-hover);
+}
+
+.menu-links:hover ul{
+    display: block;
+    cursor: hand;
 }
