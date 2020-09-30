@@ -10,11 +10,16 @@
      </head>
     <body>
         <header>
-            <figure id="logo">
-                <img src="/images/logo-mercado-liebre.svg" alt="logo de mercado liebre">
-            </figure>
-            <div><input type="search" placeholder="Ingrese artículo" name="searchBar" id="searchBar"></div>
-            
+            <div class="d-flex">
+                <figure class="w-1">
+                     <img src="/images/logo-mercado-liebre.svg" alt="logo de mercado liebre">
+                </figure>
+                <form action="/" method="GET" class="w-1 f-wrap">
+                    <input type="search" placeholder="Ingrese artículo" name="searchBar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
             <p><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de crédito</p>
             
             <nav id="navegacion">
@@ -35,7 +40,7 @@
                 
             </nav>
         </header>
-        <main>
+        <main class="mt-10 mb-10">
             <form action="/" method="POST">
                 <div>
                     <p class="campos"><input type="text" placeholder="Usuario" name="name" id="name"></p>
@@ -45,7 +50,7 @@
             </form>
         </main>
 
-        <footer>
+        <footer class="mt-10">
             <article>
                 <i class="fas fa-credit-card icono"></i>
                 <h4>Pagá con tarjeta o en efectivo</h4>
@@ -64,7 +69,7 @@
                 <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer
                     porque estás siempre prtegid@.</p>
             </article>
-            <div>
+            <div class="div">
                 <p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
             </div>
         </footer>
