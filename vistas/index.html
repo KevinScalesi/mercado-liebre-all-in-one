@@ -10,17 +10,17 @@
      </head>
     <body>
         <header>
-            <div class="d-flex">
+            <div class="d-flex p-15">
                 <figure class="w-1">
                      <img src="/images/logo-mercado-liebre.svg" alt="logo de mercado liebre">
                 </figure>
-                <form action="/" method="GET" class="w-1 f-wrap">
-                    <input type="search" placeholder="Ingrese artículo" name="searchBar">
-                    <button type="submit"><i class="fas fa-search"></i></button>
+                <form action="/" method="GET" >
+                    <input type="search" class="search-bar pos-rel" placeholder="Ingrese artículo" name="searchBar">
+                    <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
                 </form>
             </div>
 
-            <p><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de crédito</p>
+            <p class="t-center"><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de crédito</p>
             
             <nav id="navegacion">
                 <button class="menu-links" type="button">
@@ -49,72 +49,84 @@
 
         <main class="mt-10 mb-10">
             <section class="section d-flex f-col">
-                <div >
+                <div>
                     <h3>Basado en tu ultima busqueda</h3>
                 </div>
-                <div class="d-flex f-wrap">
-                    <article class="article w-1 d-flex f-wrap f-col mb-10">
-                        <figure>
-                            <img src="/images/img-cafetera-moulinex.jpg" alt="imagen cafetera">
-                        </figure>
-                        <div class="d-flex f-col border p-15 pos-rel">
-                            <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
-                            <div class="d-flex j-text">
-                                <p class="precios w-30 mt-5 mb-5"> $6.770 </p>
-                                <p class="oferta w-70 mt-5 mb-5"> 40% OFF </p> 
+                <div class="d-flex art1">
+                    <div class="d-flex art2">
+                        <article class="article article1 w-1 d-flex f-wrap f-col mb-10">
+                            <figure>
+                                <img src="/images/img-cafetera-moulinex.jpg" alt="imagen cafetera">
+                            </figure>
+                            <div class="border p-15-lat pos-rel truck">
+                                <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
                             </div>
-                            <div>
-                                <h5 class=" mt-10 mb-10">Cafetera Moulinex Dolce Gusto.</h5>
+                            <div class=" d-flex f-col texto">
+                                <div class="d-flex j-text ">
+                                    <p class="precios w-30 mt-5 mb-5"> $6.770 </p>
+                                    <p class="oferta w-70 mt-5 mb-5"> 40% OFF </p> 
+                                </div>
+                                <div>
+                                    <h5 class="mt-10 mb-10">Cafetera Moulinex Dolce Gusto.</h5>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    
-                    <article class="article w-1 d-flex f-wrap f-col mt-10 mb-10">
-                        <figure>
-                            <img src="/images/img-macbook-pro-2019.jpg" alt="imagen macbook">
-                        </figure>
-                        <div class="d-flex f-col border p-15 pos-rel">
-                            <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
-                            <div class="d-flex j-text">
-                                <p class="precios w-30 mt-5 mb-5">$230.000</p>
-                                <p class="oferta w-70 mt-5 mb-5">20% OFF</p> 
+                        </article>
+                        
+                        <article class="article article2 w-1 d-flex f-wrap f-col mt-10 mb-10">
+                            <figure>
+                                <img src="/images/img-macbook-pro-2019.jpg" alt="imagen macbook">
+                            </figure>
+                            <div class="border p-15-lat pos-rel truck">
+                                <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
                             </div>
-                            <div>
-                                <h5 class=" mt-10 mb-10">Macbook Pro 2019.</h5>
+                            <div class=" d-flex f-col texto">
+                                <div class="d-flex j-text ">
+                                    <p class="precios w-30 mt-5 mb-5">$230.000</p>
+                                    <p class="oferta w-70 mt-5 mb-5">20% OFF</p> 
+                                </div>
+                                <div>
+                                    <h5 class=" mt-10 mb-10">Macbook Pro 2019.</h5>
+                                </div>
                             </div>
-                        </div>
-                    </article>
+                        </article>
+                    </div>
             
-                    <article class="article w-1 d-flex f-wrap f-col  mt-10 mb-10">
-                        <figure>
-                            <img src="/images/img-samsung-galaxy-s10.jpg" alt="imagen smartphone samsung">
-                        </figure>
-                        <div class="d-flex f-col border p-15 pos-rel">
-                            <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
-                            <div class="d-flex j-text">
-                                <p class="precios w-30 mt-10">$70.500</p>
-                                <p class="oferta  w-70 mt-10">15% OFF</p> 
+                    <div class="d-flex art2">
+                        <article class="article article3 w-1 d-flex f-wrap f-col  mt-10 mb-10">
+                            <figure>
+                                <img src="/images/img-samsung-galaxy-s10.jpg" alt="imagen smartphone samsung">
+                            </figure>
+                            <div class="border p-15-lat pos-rel truck">
+                                <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
                             </div>
-                            <div>
-                                <h5 class=" mt-10 mb-10">Teléfono móvil Samsung Galaxy S10</h5>
+                            <div class=" d-flex f-col texto">
+                                <div class="d-flex j-text ">
+                                    <p class="precios w-30 mt-10">$70.500</p>
+                                    <p class="oferta  w-70 mt-10">15% OFF</p> 
+                                </div>
+                                <div>
+                                    <h5 class=" mt-10 mb-10">Teléfono móvil Samsung Galaxy S10</h5>
+                                </div>
+                        </article>
+    
+                        <article class="article article4 w-1 d-flex f-wrap f-col  mt-10 ">
+                            <figure>
+                                <img src="/images/img-tv-samsung-smart.jpg" alt="imagen smartTv" >
+                            </figure>
+                            <div class="border p-15-lat pos-rel truck">
+                                <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
                             </div>
-                    </article>
-
-                    <article class="article w-1 d-flex f-wrap f-col  mt-10 ">
-                        <figure>
-                            <img src="/images/img-tv-samsung-smart.jpg" alt="imagen smartTv" >
-                        </figure>
-                        <div class="d-flex f-col border p-15 pos-rel">
-                            <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
-                            <div class="d-flex j-text">
-                                <p class="precios  w-30 mt-10">$34.000</p>
-                                <p class="oferta  w-70 mt-10">5% OFF</p> 
+                            <div class=" d-flex f-col texto">
+                                <div class="d-flex j-text ">
+                                    <p class="precios  w-30 mt-10">$34.000</p>
+                                    <p class="oferta  w-70 mt-10">5% OFF</p> 
+                                </div>
+                                <div>
+                                    <h5 class="mt-10 mb-10"> SmartTv Samsung 43"</h5>
+                                </div>
                             </div>
-                            <div>
-                                <h5 class="mt-10 mb-10"> SmartTv Samsung 43"</h5>
-                            </div>
-                        </div>
-                    </article>
+                        </article>
+                    </div>
                 </div>
             </section>
 
@@ -122,93 +134,109 @@
                 <div >
                     <h3>Ofertas</h3>
                 </div>
-                <article class="article w-1 d-flex f-wrap f-col mb-10">
-                    <figure>
-                        <img src="/images/img-cafetera-moulinex.jpg" alt="imagen cafetera">
-                    </figure>
-                    <div class="d-flex f-col border p-15 pos-rel">
-                        <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
-                        <div class="d-flex j-text">
-                            <p class="precios w-30 mt-10"> $6.770 </p>
-                            <p class="oferta w-70 mt-10"> 40% OFF </p> 
-                        </div>
-                        <div>
-                            <h5 class=" mt-10 mb-10" >Cafetera Moulinex Dolce Gusto.</h5>
-                        </div>
+                <div  class="d-flex art1">
+                    <div class="d-flex art2">
+                        <article class="article w-1 d-flex f-wrap f-col mb-10">
+                            <figure>
+                                <img src="/images/img-cafetera-moulinex.jpg" alt="imagen cafetera">
+                            </figure>
+                            <div class="border p-15-lat pos-rel truck">
+                                <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
+                            </div>
+                            <div class=" d-flex f-col texto">
+                                <div class="d-flex j-text ">
+                                    <p class="precios w-30 mt-10"> $6.770 </p>
+                                    <p class="oferta w-70 mt-10"> 40% OFF </p> 
+                                </div>
+                                <div>
+                                    <h5 class=" mt-10 mb-10" >Cafetera Moulinex Dolce Gusto.</h5>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="article w-1 d-flex f-wrap f-col mt-10 mb-10">
+                            <figure>
+                                <img src="/images/img-macbook-pro-2019.jpg" alt="imagen macbook">
+                            </figure>
+                            <div class="border p-15-lat pos-rel truck">
+                                <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
+                            </div>
+                            <div class=" d-flex f-col texto">
+                                <div class="d-flex j-text ">
+                                    <p class="precios w-30 mt-10">$230.000</p>
+                                    <p class="oferta w-70 mt-10">20% OFF</p> 
+                                </div>
+                                <div>
+                                    <h5 class=" mt-10 mb-10">Macbook Pro 2019.</h5>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                </article>
-                
-                <article class="article w-1 d-flex f-wrap f-col mt-10 mb-10">
-                    <figure>
-                        <img src="/images/img-macbook-pro-2019.jpg" alt="imagen macbook">
-                    </figure>
-                    <div class="d-flex f-col border p-15 pos-rel">
-                        <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
-                        <div class="d-flex j-text">
-                            <p class="precios w-30 mt-10">$230.000</p>
-                            <p class="oferta w-70 mt-10">20% OFF</p> 
-                        </div>
-                        <div>
-                            <h5 class=" mt-10 mb-10">Macbook Pro 2019.</h5>
-                        </div>
-                    </div>
-                </article>
+                    <div class="d-flex art2">
+                        <article class="article w-1 d-flex f-wrap f-col mt-10 mb-10">
+                            <figure>
+                                <img src="/images/img-samsung-galaxy-s10.jpg" alt="imagen smartphone samsung">
+                            </figure>
+                            <div class="border p-15-lat pos-rel truck">
+                                <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
+                            </div>
+                            <div class=" d-flex f-col texto">
+                                <div class="d-flex j-text ">
+                                    <p class="precios w-30 mt-10">$70.500</p>
+                                    <p class="oferta  w-70 mt-10">15% OFF</p> 
+                                </div>
+                                <div>
+                                    <h5 class=" mt-10 mb-10">Teléfono móvil Samsung Galaxy S10</h5>
+                                </div>
+                        </article>
         
-                <article class="article w-1 d-flex f-wrap f-col mt-10 mb-10">
-                    <figure>
-                        <img src="/images/img-samsung-galaxy-s10.jpg" alt="imagen smartphone samsung">
-                    </figure>
-                    <div class="d-flex f-col border p-15 pos-rel">
-                        <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
-                        <div class="d-flex j-text">
-                            <p class="precios w-30  mt-10">$70.500</p>
-                            <p class="oferta  w-70 mt-10">15% OFF</p> 
-                        </div>
-                        <div>
-                            <h5 class=" mt-10 mb-10">Teléfono móvil Samsung Galaxy S10</h5>
-                        </div>
-                </article>
-
-                <article class="article w-1 d-flex f-wrap f-col mt-10">
-                    <figure>
-                        <img src="/images/img-tv-samsung-smart.jpg" alt="imagen smartTv" >
-                    </figure>
-                    <div class="d-flex f-col border p-15 pos-rel">
-                        <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
-                        <div class="d-flex j-text">
-                            <p class="precios  w-30  mt-10">$34.000</p>
-                            <p class="oferta  w-70  mt-10 ">5% OFF</p> 
-                        </div>
-                        <div>
-                            <h5 class=" mt-10 mb-10"> SmartTv Samsung 43"</h5>
-                        </div>
+                        <article class="article w-1 d-flex f-wrap f-col mt-10">
+                            <figure>
+                                <img src="/images/img-tv-samsung-smart.jpg" alt="imagen smartTv" >
+                            </figure>
+                            <div class="border p-15-lat pos-rel truck">
+                                <i class="fas fa-truck oferta pos-abs pos-icon b-icon"></i>
+                            </div>
+                            <div class=" d-flex f-col texto">
+                                <div class="d-flex j-text ">
+                                    <p class="precios  w-30  mt-10">$34.000</p>
+                                    <p class="oferta  w-70  mt-10 ">5% OFF</p> 
+                                </div>
+                                <div>
+                                    <h5 class=" mt-10 mb-10"> SmartTv Samsung 43"</h5>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                </article>
+                </div>
             </section>
         </main>
         
-        <footer class="mt-10">
-            <article>
-                <i class="fas fa-credit-card icono"></i>
-                <h4>Pagá con tarjeta o en efectivo</h4>
-                <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de
-                    pago. ¡Y siempre es seguro!</p>
-            </article>
-            <article>
-                <i class="fas fa-gift icono"></i>
-                <h4>Envío gratis desde los $ 2.500</h4>
-                <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de
-                    productos. Es un beneficio de MercadoPuntos.</p>
-            </article>
-            <article>
-                <i class="fas fa-user-shield icono"></i>
-                <h4>Seguridad, de principio a fin</h4>
-                <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer
-                    porque estás siempre prtegid@.</p>
-            </article>
+        <footer class="footer-flex mt-10">
+            <div class="footer-flex-art">
+                <article>
+                    <i class="fas fa-credit-card icono"></i>
+                    <h4>Pagá con tarjeta o en efectivo</h4>
+                    <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de
+                        pago. ¡Y siempre es seguro!</p>
+                </article>
+                <article>
+                    <i class="fas fa-gift icono"></i>
+                    <h4>Envío gratis desde los $ 2.500</h4>
+                    <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de MercadoPuntos.</p>
+                </article>
+                <article>
+                    <i class="fas fa-user-shield icono"></i>
+                    <h4>Seguridad, de principio a fin</h4>
+                    <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer
+                        porque estás siempre prtegid@.</p>
+                </article>
+            </div>
             <div class="div">
                 <p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
             </div>
+            
         </footer>
 
     </body>
