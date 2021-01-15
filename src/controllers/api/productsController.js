@@ -1,4 +1,6 @@
 const { Product, Sequelize, Brand, Category } = require('../../database/models');
+const category = require('../../database/models/category');
+const product = require('../../database/models/product');
 const Op = Sequelize.Op;
 
 module.exports = {
@@ -39,6 +41,25 @@ module.exports = {
                     status: 200,
                     count: products.length,
                     url: "/api/products/oferts"
+                },
+                data: products
+            }
+            res.json(respuesta)
+        })
+    },
+    categories (req,res){
+        Product.findAll({
+            include: [{association: "category"}]
+        })
+        .then(products=>{
+            if(req.params.category != undefined){
+                 products = products.filter(product => product.category.name == req.params.category)
+            }
+            let respuesta = {
+                meta: {
+                    status: 200,
+                    count: products.length,
+                    url: "/api/products/categories/" + req.params.category
                 },
                 data: products
             }

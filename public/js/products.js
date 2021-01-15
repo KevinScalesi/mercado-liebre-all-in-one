@@ -11,14 +11,14 @@ window.addEventListener("load", function(){
             let p = document.querySelectorAll("p.nameLatest")
 
             for(let i=0; i<latest.data.length;i++){
-               a.href = `/products/detail/${latest.data[i].id}`
-               img.src = `/images/products/${latest.data[i].image}`
-               img.alt = `${latest.data[i].name}`
-               h2.innerHTML = `$ ${latest.data[i].price - latest.data[i].price * latest.data[i].discount / 100}`
+               a[i].href = `/products/detail/${latest.data[i].id}`
+               img[i].src = `/images/products/${latest.data[i].image}`
+               img[i].alt = `${latest.data[i].name}`
+               h2[i].innerHTML = `$ ${latest.data[i].price - latest.data[i].price * latest.data[i].discount / 100}`
                if(latest.data[i].discount > 0){
-                   span.innerHTML = `${ latest.data[i].discount} % OFF`
+                   span[i].innerHTML = `${ latest.data[i].discount} % OFF`
                }
-               p.innerHTML = `${latest.data[i].name}`
+               p[i].innerHTML = `${latest.data[i].name}`
             }; 
         })
         .catch(error=>{
@@ -38,14 +38,14 @@ window.addEventListener("load", function(){
         let p = document.querySelectorAll("p.nameOferts")
 
         for(let i=0; i< oferts.data.length;i++){
-           a.href = `/products/detail/${oferts.data[i].id}`
-           img.src = `/images/products/${oferts.data[i].image}`
-           img.alt = `${oferts.data[i].name}`
-           h2.innerHTML = `$ ${oferts.data[i].price - oferts.data[i].price * oferts.data[i].discount / 100}`
+           a[i].href = `/products/detail/${oferts.data[i].id}`
+           img[i].src = `/images/products/${oferts.data[i].image}`
+           img[i].alt = `${oferts.data[i].name}`
+           h2[i].innerHTML = `$ ${oferts.data[i].price - oferts.data[i].price * oferts.data[i].discount / 100}`
            if(oferts.data[i].discount > 0){
-               span.innerHTML = `${ oferts.data[i].discount} % OFF`
+               span[i].innerHTML = `${ oferts.data[i].discount} % OFF`
            }
-           p.innerHTML = `${oferts.data[i].name}`
+           p[i].innerHTML = `${oferts.data[i].name}`
         }; 
     })
     .catch(error=>{

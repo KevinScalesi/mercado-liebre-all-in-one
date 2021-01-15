@@ -7,5 +7,6 @@ const productsAPIController = require('../../controllers/api/productsController'
 
 router.get('/latest', productsAPIController.latest); /* GET - latest results */
 router.get('/oferts', productsAPIController.oferts); /* GET - oferts results */
+router.get('/categories/:category?', productsAPIController.categories); /* GET - categories results */
 
 module.exports = router;
