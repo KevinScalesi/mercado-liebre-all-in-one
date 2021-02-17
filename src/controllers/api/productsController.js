@@ -65,5 +65,29 @@ module.exports = {
             }
             res.json(respuesta)
         })
-    }
+    },
+    amount (req,res){
+        Product.sum('price').then(total => {
+            let respuesta = {
+                meta: {
+                    status: 200,
+                    url: "/api/products/amount"
+                },
+                data: `$${total}` 
+            }
+            res.json(respuesta)
+        })
+    },
+    total (req,res){
+        Product.count().then(total=>{
+            let respuesta = {
+                meta: {
+                    status: 200,
+                    url: "/api/products/amount"
+                },
+                data: total 
+            }
+            res.json(respuesta)
+        })
+    } 
 };
