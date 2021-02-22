@@ -104,8 +104,7 @@ dist
 .tern-port
 
 #others
-first-ml/
-second-ml/
+
 
 # Compiled source #
 ###################
@@ -152,6 +151,8 @@ Thumbs.db
 .htaccess
 *.config
 node_modules/
+first_ml/
+second_ml/
 src/jsonStyle/
 public/images/users/
 .vscode/
