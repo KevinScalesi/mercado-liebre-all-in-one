@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -104,14 +102,11 @@ dist
 
 # TernJS port file
 .tern-port
-=======
-node_modules/
 
 #others
 .first-ml/
 .second-ml/
->>>>>>> b1fd5b5f583029ae47beaf2ba64bde82b4198bd0
-=======
+
 # Compiled source #
 ###################
 *.com
@@ -157,5 +152,8 @@ Thumbs.db
 .htaccess
 *.config
 node_modules/
+src/jsonStyle/
+public/images/users/
 .vscode/
->>>>>>> 69ea8ebe5b892b8630f06d2ea7581c6d03224ce1
+.env
+
